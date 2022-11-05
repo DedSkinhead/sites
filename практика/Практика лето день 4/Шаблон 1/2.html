@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="foto/bootstrap/bootstrap.min.css" rel="stylesheet"></link>
+<script src="foto/bootstrap/bootstrap.min.js" ></script>
+
+<title>SBEY</title>
+<style type="text/css">
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+.menu ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: brown,helvetica,arial,sans-serif;
+  margin: 0 80px;
+  width: 50%;
+  max-width: 700px;
+  padding: 0;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding-bottom: 0;
+white-space: nowrap;
+margin-right: 45px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.kar{
+  width: calc(16.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+}
+.kar img:last-child{
+  margin-right: 0;
+}
+.fona{
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.fona h2{
+  position: absolute;
+  text-rendering: auto;
+font-weight: 200;
+font-family: brown,helvetica,arial,sans-serif;
+height: 10%;
+top:45%;
+left: 20%;
+}
+.fona img{
+  position	: relative;
+  width: 100%;
+  height: 100%; 
+  text-align: center;
+}
+.section{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+padding: 0;
+}
+.con{
+  display: flex;
+  padding-left: 40px;
+padding-right: 40px;
+}
+.filt{
+  padding-left: 30px;
+}
+.podklu{
+	padding: 20px 0;
+	display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  border-bottom: 2px solid #e1e2e3;
+}
+
+.podklu h2{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  
+}
+.podklu ul{
+  padding: 0;
+}
+.podklu li{
+list-style: none;
+}
+.podklu2{
+	padding: 20px 0;
+	display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+.podklu2 h2{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  
+}
+.podklu2 ul{
+  padding: 0;
+}
+.podklu2 li{
+list-style: none;
+}
+.prod{
+  padding: 30px;
+  width: 80%;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+   margin-left: auto;
+    margin-right: auto;
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);	
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.one{
+  padding-bottom:100px ;
+}
+.two{
+  padding-bottom:100px ;
+}
+.tree{
+  padding-bottom:100px ;
+}
+.four{
+  padding-bottom:100px;
+}
+.fife{
+  padding-bottom:100px ;
+}
+.six{
+  padding-bottom:100px;
+}
+.prod img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+  background-color: gainsboro ;
+  
+}
+@media (max-width: 1200px) {
+  body .prod{
+    grid-template-columns:  repeat(2, 1fr);	
+  }
+  body .one{
+    grid-column: 1;
+  }
+  body .two{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  body .tree{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  body .four{
+    grid-row: 2;
+    grid-column: 2;
+  }
+  body .fife{
+    grid-row: 3;
+    grid-column: 1;
+  }
+  body .six{
+    grid-row: 3;
+    grid-column: 2;
+  }
+  
+}
+.conpodval{
+  
+  padding: 100px 0 50px;
+  background: #252a2c;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+
+
+ 
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+}
+
+.osnov::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    bottom: 0px;
+}
+.osnov  ul {
+    text-align: center;
+    list-style: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.osnov li{
+  display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+padding-bottom: 0;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.icons  {
+  padding-top: 20px;
+margin-left: auto;
+  margin-right: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a:first-child{
+  margin-right: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+ 
+<header class="conteiner">
+  <div class="grid">
+    <div class="logo">
+      <a href="1.html"> <img src="foto/header/log.png" width="60px" height="60px" ></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <a href="">  <li>Магазин</li></a>
+          <a href="">  <li>О нас</li></a>
+            <a href="">  <li>Поддержка</li></a>
+      </ul>
+    </div>
+    <div class="kar">
+      <img src="foto/header/lupa.png" width="30px" height="30px" >
+      <a href=""> <img src="foto/header/klient.png" width="30px" height="30px" ></a>
+    </div>
+    </div>
+</header>
+<div class="fona"><img src="foto/second/fon.jpg" ><h2>КЛАВИАТУРЫ</h2></div>
+<div class="section">
+  <div class="con">
+    <div class="filt">
+<div class="podklu">
+  <h2>Тип подключения</h2>
+  <ul>
+    
+    <li><input type="checkbox"> USB-приемник</li>
+    <li><input type="checkbox"> Проводная</li>
+    <li><input type="checkbox"> Проводная</li>
+  </ul>
+</div>
+<div class="podklu2">
+  <h2>Платформа</h2>
+  <ul>
+    
+    <li><input type="checkbox"> Windows</li>
+    <li><input type="checkbox"> Mac</li>
+    <li><input type="checkbox"> Linux</li>
+    <li><input type="checkbox"> Chrome</li>
+  </ul>
+</div>
+    </div>
+  <div class="prod">
+    <div class="one">
+      <a href=""> <img src="foto/keyboard/1.png"  ></a>
+      <h2>MAX KEYBOARD</h2>
+    </div>
+    <div class="two">
+      <a href=""><img src="foto/keyboard/2.png" ></a>
+      <h2>k1488 KEYBOARD</h2>
+    </div>
+    <div class="tree">
+      <a href=""> <img src="foto/keyboard/3.png" ></a>
+      <h2>rtc KEYBOARD</h2>
+    </div>
+    <div class="four">
+      <a href=""> <img src="foto/keyboard/4.png" ></a>
+      <h2>one-two KEYBOARD</h2>
+    </div>
+    <div class="fife">
+      <a href=""> <img src="foto/keyboard/5.png"  ></a>
+      <h2>4uX-/7blX KEYBOARD</h2>
+    </div>
+    <div class="six">
+      <a href=""><img src="foto/keyboard/6.png" ></a>
+      <h2>da KEYBOARD</h2>
+    </div>
+  </div>
+  </div>
+</div>
+<footer class="conpodval">
+	<div class="osnov">
+		<ul>
+      
+      <li><a href="">О компании</a></li> 
+      <li><a href="">Драйвера</a></li> 
+      <li><a href="">Поддержка</a></li> 
+      <li><a href="">Магазин</a></li> 
+    </ul>
+  </div>
+  <div class="icons">
+    <a href=""><img src="foto/podval/odnok.png" width="40px" height="40px" ></a>
+    <a href=""><img src="foto/podval/vk.png" width="30px" height="30px" ></a>
+  </div>
+  </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="bootstrap.min.css" rel="stylesheet"></link>
+<script src="bootstrap.min.js" ></script>
+
+<title>SBEY</title>
+<style type="text/css">
+.conteiner{
+  height: 100%;
+  width: 100%;
+max-width: 1280px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 40px;
+padding-right: 40px;
+display: block;
+}
+.grid{
+  margin-right: -20px;
+width: calc(100% + 20px);
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+.menu ul{
+display: flex;
+flex-grow: 1;
+justify-content: center;
+font-family: brown,helvetica,arial,sans-serif;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding: 20px 70px;
+padding-bottom: 0;
+
+}
+.kar{
+  width: calc(16.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:20px;
+display: flex;
+justify-content: center;
+}
+.reklama{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+}
+.blockreklama{
+  width: 100%;
+  height: 100%;
+  padding-left:250px;
+  padding-right: 250px;
+  padding-top:  70px;
+  padding-left:  70px;
+}
+.klava{
+  padding: 40px;
+width: 600px;
+height: 350px;
+background-color: gainsboro ;
+ 
+}
+.mouse{
+  padding: 40px;
+width: 300px;
+height: 300px;
+background-color: gainsboro;
+ 
+}
+.reklama img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
+
+</head>
+
+<body>
+<div class="conteiner">
+  <div class="grid">
+    <div class="logo">
+     <img src="log.png" width="60px" height="60px" >
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Магазин</li>
+        <li>О нас</li>
+        <li>Поддержка</li>
+      </ul>
+    </div>
+    <div class="kar">
+      <img src="lupa.png" width="30px" height="30px" >
+      <img src="klient.png" width="30px" height="30px" >
+    </div>
+    </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bloody.jpg" class="d-block w-100" alt="bloody">
+    </div>
+    <div class="carousel-item">
+      <img src="steelseries.jpg" class="d-block w-100" alt="steelseries">
+    </div>
+    <div class="carousel-item">
+      <img src="logi.jpg" class="d-block w-100" alt="logi">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="reklama">
+  <div class="blockreklama">
+<div class="klava">
+  <img src="klava.png"  >
+</div>
+<div class="mouse">
+  <img src="Mouse.png" width="60px" height="60px" >
+</div>
+<div class="nau">
+  <img src="nau.png" width="60px" height="60px" >
+</div>
+<div class="micro">
+  <img src="micro.png" width="60px" height="60px" >
+</div>
+</div>
+</div>
+</body>
+</html>

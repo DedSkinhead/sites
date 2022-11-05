@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="bootstrap.min.css" rel="stylesheet"></link>
+<script src="bootstrap.min.js" ></script>
+
+<title>SBEY</title>
+<style type="text/css">
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+.menu ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: brown,helvetica,arial,sans-serif;
+  margin: 0 80px;
+  width: 50%;
+  max-width: 700px;
+  padding: 0;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding-bottom: 0;
+white-space: nowrap;
+margin-right: 45px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.kar{
+  width: calc(16.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+}
+.kar img:last-child{
+  margin-right: 0;
+}
+.reklama{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+}
+.blockreklama{
+  width: 80%;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+   margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  grid-template-columns:  repeat(3, 1fr);	
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  body .blockreklama{
+    grid-template-columns:  repeat(4, 1fr);	
+  }
+  body .klava{
+    grid-column: 1/5;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+  }
+  body .mouse{
+    grid-row: 2;
+    grid-column: 1/3;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  body .nau{
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  body .micro{
+    grid-row: 2/4;
+    grid-column: 3/5;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+}
+
+.klava{
+	display: flex;
+	grid-column: 1/3;
+  grid-row: 1;
+  margin:  40px;
+background-color: gainsboro ;
+justify-content: center;
+ 
+}
+.mouse{
+	display: flex;
+	grid-column: 1;
+  grid-row: 2;
+ margin:  0px 40px 40px 40px;
+background-color: gainsboro;
+justify-content: center;
+
+}
+.nau{
+	display: flex;
+	grid-column: 2 ;
+  grid-row: 2;
+ margin:  0px 40px 40px 40px;
+background-color: gainsboro;
+justify-content: center;
+ 
+}	
+.micro{
+	display: flex;
+	grid-column: 3;
+	 grid-row: 1/3;
+ margin:  40px;
+background-color: gainsboro;
+justify-content: center;
+}
+.reklama img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.reklama img {
+    transition: 1s; 
+   }
+ .reklama   img:hover {
+    transform: scale(1.2); 
+   }
+.conpodval{
+  
+  padding: 100px 0 50px;
+  background: #252a2c;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+
+ 
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+}
+
+.osnov::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    bottom: 0px;
+}
+.osnov  ul {
+    text-align: center;
+    list-style: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.osnov li{
+  display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+padding-bottom: 0;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.icons  {
+  padding-top: 20px;
+margin-left: auto;
+  margin-right: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a:first-child{
+  margin-right: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+<header class="conteiner">
+  <div class="grid">
+    <div class="logo">
+      <a href=""> <img src="log.png" width="60px" height="60px" ></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Магазин</li>
+        <li>О нас</li>
+        <li>Поддержка</li>
+      </ul>
+    </div>
+    <div class="kar">
+      <img src="lupa.png" width="30px" height="30px" >
+      <a href=""> <img src="klient.png" width="30px" height="30px" ></a>
+    </div>
+    </div>
+</header>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bloody.jpg" class="d-block w-100" alt="bloody">
+    </div>
+    <div class="carousel-item">
+      <img src="steelseries.jpg" class="d-block w-100" alt="steelseries">
+    </div>
+    <div class="carousel-item">
+      <img src="logi.jpg" class="d-block w-100" alt="logi">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="reklama">
+  <div class="blockreklama">
+<div class="klava">
+  <a href=""> <img src="klava.png"  ></a>
+</div>
+<div class="mouse">
+  <a href=""><img src="Mouse.png" ></a>
+</div>
+<div class="nau">
+  <a href=""> <img src="nau.png" ></a>
+</div>
+<div class="micro">
+  <a href=""> <img src="micro.png" ></a>
+</div>
+</div>
+</div>
+<footer class="conpodval">
+	<div class="osnov">
+		<ul>
+      <li><a href="">О компании</a></li> 
+      <li><a href="">Драйвера</a></li> 
+      <li><a href="">Поддержка</a></li> 
+      <li><a href="">Магазин</a></li> 
+    </ul>
+  </div>
+  <div class="icons">
+    <a href=""><img src="odnok.png" width="40px" height="40px" ></a>
+    <a href=""><img src="vk.png" width="30px" height="30px" ></a>
+  </div>
+  </footer>
+ 
+</body>
+</html>
