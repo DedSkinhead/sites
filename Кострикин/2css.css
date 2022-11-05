@@ -1,0 +1,206 @@
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.grid{
+  width: 70%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.logo img{
+  width:130px;
+   height:90px;
+}
+.logo:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+.menu h2{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+	font-weight: bold;
+	font-family: Arial;
+  margin: 0 80px;
+  width: 80%;
+  max-width: 700px;
+  padding: 0;
+}
+.kar{
+  width: calc(16.66667% - 20px);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: #fff;
+	font-weight: bold;
+	font-family: Arial;
+  font-size: 30px;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+width:30px;
+   height:30px;
+}
+.slider{
+  width: 100%;
+  height: 100%;
+}
+.carusel{
+  padding: 10px 200px 30px 200px;
+}
+.conte{
+  display: block;
+width: 100%;
+height: 100%;
+padding: 0 0 30px 0;
+}
+.stats{
+  position: relative;
+width:78%;
+height: 60%;
+border-top: 50px  solid black;
+border-right: 20px  solid black;
+border-left: 20px  solid black;
+border-bottom: 20px  solid black;
+margin: auto;
+
+display: flex;
+align-content: center;
+justify-content: center;
+}
+.stats h2{
+  display: flex;
+  position: absolute;
+  color: white;
+  top: -3rem;
+
+}
+.ocenutext{
+display: flex;
+width: 60%;
+display: flex;
+align-items: center;
+justify-content:center ;
+margin: auto;
+}
+.text{
+  width: calc(100% - 155px);
+height: 100%;
+display: inline-flex;
+align-items: center;
+}
+.text h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.foto{
+  width: 100%;
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);	
+  grid-gap: 5px;
+  grid-template-rows: repeat(8,1fr);
+}
+.one{
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1/3;
+  background-color: gray;
+  display: flex;
+align-items: center;
+padding: 0 0 0 5px;
+}
+.two{
+  background-color: gray;
+  grid-row: 6;
+  grid-column: 1/3;
+  display: flex;
+align-items: center;
+padding: 0 0 0 5px;
+
+}
+.tree{
+  margin: 0 0 0 5px;
+  border-bottom: 1px solid gray;
+}
+.four{
+  margin: 0 0 0 5px;
+}
+.ocen{
+  font-size: 35px;
+  width: 90px;
+height: 90px;
+display: inline-block;
+background-color: black;
+color: white;
+margin: 10px;
+min-width: 90px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+}
+.conpodval{
+  padding: 100px 0 50px;
+  background: #252a2c;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 10px 0;
+display: block;
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+align-items: center;
+justify-content: center;}
+@media (min-width: 768px) and (max-width: 1550px) {
+.stats h2{
+  font-size:19px;
+}
+.stats{
+  width: 95%;
+}
+.text h2{
+  font-size:25px;
+}
+.osnov h2{
+    font-size: 20px;
+  }
+  .ocenutext{
+    width: 80%;
+  }
+}

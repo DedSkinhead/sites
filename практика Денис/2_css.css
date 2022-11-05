@@ -1,0 +1,334 @@
+
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo{
+  width: calc(7% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.menu{
+margin-right: 20px;
+display: flex;
+justify-self: center;
+width: 70%;
+}
+.menu ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: brown,helvetica,arial,sans-serif;
+  margin: 0;
+  max-width: 90%;
+  padding: 0;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding-bottom: 0;
+white-space: nowrap;
+margin-right: 45px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.kar{
+  width: calc(10% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+}
+.kar img:last-child{
+  margin-right: 0;
+}
+
+.rassua{
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@font-face {
+    font-family: rass; 
+    src: url(foto/rass.ttf);
+}
+.rassua h2{
+  position: absolute;
+  text-rendering: auto;
+font-weight: 200;
+font-family: rass;
+color: white  ;
+font-size: 90px; 
+}
+.rassua img{
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}
+.proda{
+  display: flex;
+  padding: 0 0 20px 0;
+}
+.slovarass{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #0093d0;
+}
+.slova h2{  
+  font-size: 40px;
+}
+.avtor{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 81%;
+}
+.zamena{
+  width: 80%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ab00;
+}
+.zamena h1{
+  color: #fff;
+}
+.melfilt li{
+  list-style: none;
+}
+.filt{
+  width: 20%;
+  height: 100%;
+  margin: 20px 0 20px 20px;
+	padding: 20px 0 0 30px;
+	display: flex;
+  flex-direction: column;
+ background-color: #f3fafd;
+}
+
+.filt h2{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  
+}
+.filt ul{
+  padding: 0;
+}
+.filt li{
+list-style: none;
+}
+.filt button{
+  width: 30%;
+  background-color: #f0ab00;
+  color: white;
+  border: none;
+  border-radius:8px ;
+}
+.poisk{
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 0 10px 0;
+}
+.poisk button:hover {
+  transform: scale3d(0.95, 0.95, 0.95);
+}
+.otelglav{
+  display: flex;
+width: 90%;
+height: 100%;
+justify-content: space-between;
+flex-direction: column;
+}
+.otel{
+  display: grid;
+  width: 85%;
+  height: 100%;
+  grid-template-columns:  repeat(4, 1fr);	
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 0;
+  margin: 20px 0 0 10px;
+border: 1px solid;
+}
+.otel img{
+  width:320px;
+  height: 160px;
+}
+.karotel{
+  grid-column: 1;
+}
+.vse{
+  grid-column: 2/4;
+}
+.mest{
+  display: flex;
+  border-bottom:1px solid black ;
+}
+.mest p{
+color: #0093d0;
+}
+.mest img{
+  width: 20px;
+  height: 20px;
+}
+.cen {
+  background-color: #f0ab00;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cen a{
+  color: #fff;
+}
+.mel{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 10px;
+}
+@media (max-width: 1500px){
+  .proda{
+    flex-direction: column;
+    align-items: center;
+  }
+  .zamena{
+  display: flex;
+width: 60%;
+margin: 10px 0 0 0;
+border-radius:10px ;
+}
+.filt{
+  display: none;
+}
+.otel{
+  width: 100%;
+}
+}
+@media  (max-width: 1300px){
+  .grid{
+    width: 95%;
+  }
+  .kar{
+    align-items: center;
+  }
+  .grid h2{
+    font-size: 20px;
+  }
+  .cen h1{
+    font-size: 30px;
+  }
+
+}
+.conpodval{
+  
+  padding: 100px 0 50px;
+  background: #0093d0;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+}
+.conpodval a{
+  text-decoration: none;
+  color: white  ;
+}
+.conpodval a:hover{
+  color: white  ;
+  text-decoration: underline;
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+border-bottom: 1px solid white;
+}
+
+.osnov::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+}
+.osnov  ul {
+    text-align: center;
+    list-style: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.osnov li{
+  display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+padding-bottom: 0;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.icons  {
+  padding-top: 20px;
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons a{
+  margin-right: 30px;
+}
+.icons a:last-child{
+  margin-right: 0;
+}
+.icons img{
+  width: 40px;
+  height: 40px;
+}

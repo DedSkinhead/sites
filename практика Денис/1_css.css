@@ -1,0 +1,246 @@
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo{
+  width: calc(7% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.menu{
+margin-right: 20px;
+display: flex;
+justify-self: center;
+width: 70%;
+}
+.menu ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: brown,helvetica,arial,sans-serif;
+  margin: 0;
+  max-width: 90%;
+  padding: 0;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding-bottom: 0;
+white-space: nowrap;
+margin-right: 45px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.kar{
+  width: calc(10% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+}
+.kar img:last-child{
+  margin-right: 0;
+}
+.pocup{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.blockpocup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  width: 40%;
+  background-color: #0093d0;
+  border-radius: 8px;
+}
+.otkud{
+  padding-right: 20px;
+  color: white;
+}
+.kuda{
+  padding-right: 20px;
+  color: white;
+}
+.kogda{
+  padding-right: 20px;
+  color: white;
+}
+.poisk{
+  display: flex;
+align-items: flex-end;
+
+}
+.poisk button{
+  color: white;
+  background-color: #f0ab00;;
+  border: 0;
+}
+.pop{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  flex-direction: column;
+}
+.strani{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-template-rows: repeat(1, 1fr);
+
+}
+.strani img{
+  width: 280px;
+  height: 160px;
+}
+.russ{
+  border: 1px solid black;
+}
+.kazax{
+  border: 1px solid black;
+}
+.turki{
+  border: 1px solid black;
+}
+.germ{
+  border: 1px solid black;
+}
+@media  (max-width: 1400px){
+  .blockpocup{
+    width: 60%;
+  }
+}
+@media  (max-width: 1300px){
+  .strani{
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  }
+  .grid{
+    width: 95%;
+  }
+  .kar{
+    align-items: center;
+  }
+  .grid h2{
+    font-size: 20px;
+  }
+}
+@media  (max-width: 900px){
+  .blockpocup{
+    width: 80%;
+  }
+}
+.conpodval{
+  
+  padding: 100px 0 50px;
+  background: #0093d0;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+}
+.conpodval a{
+  text-decoration: none;
+  color: white  ;
+}
+.conpodval a:hover{
+  text-decoration: none;
+  color: white  ;
+  text-decoration: underline;
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+border-bottom: 1px solid white;
+}
+
+.osnov::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+}
+.osnov  ul {
+    text-align: center;
+    list-style: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.osnov li{
+  display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+padding-bottom: 0;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.icons  {
+  padding-top: 20px;
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons a{
+  margin-right: 30px;
+}
+.icons a:last-child{
+  margin-right: 0;
+}
+.icons img{
+  width: 40px;
+  height: 40px;
+}

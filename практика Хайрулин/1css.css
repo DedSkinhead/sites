@@ -1,0 +1,112 @@
+
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  width: 100%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu img{
+  width: 60%;
+}
+.menu{
+  width: 100%;
+display: flex;
+justify-content: center;
+
+}
+
+.foto{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.foto img{
+  width: 70%;
+}
+.info{
+  background-image: url(foto/fon/grey.jpg);
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.info img{
+  padding: 5px 0 0 0;
+  width: 20%;
+}
+.info p {
+  font-size: 30px;
+  padding: 0 0 50px 0;
+}
+.text{
+  width: 60%;
+}
+.conpodval{
+  border-top: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  repeat(1,1fr);
+  grid-gap: 0px;
+}
+.navi{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.navi h2{
+  margin: 3px;
+}
+.navi p{
+  margin: 2px;
+}
+.uznat{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.icons  {
+  border: 1px solid black;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons img{
+  width: 30px;
+  height: 30px;
+}
+.icons a{
+  margin-right: 30px;
+  
+}
+.icons a:last-child{
+  margin-right: 0;
+}
+.icons p{
+  font-size: 22px;
+  margin: auto;
+}

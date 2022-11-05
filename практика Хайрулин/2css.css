@@ -1,0 +1,76 @@
+
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.gridi{
+  width: 100%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu img{
+  width: 60%;
+}
+.menu{
+  width: 100%;
+display: flex;
+justify-content: center;
+
+}
+.glav{
+  width: 100%;
+  height: 100%;
+  background-image: url(foto/fon/grey.jpg);
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.glav img{
+  width: 30%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 0px;
+  grid-template-rows: repeat(1,1fr);
+}
+.one{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  width: 43%;
+}
+.text p{
+  font-size: 20px;
+}
+@media (max-width: 1200px){
+.grid{
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 0px;
+  grid-template-rows: repeat(2,1fr);
+}
+}
+.conpodval{
+  border-top: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

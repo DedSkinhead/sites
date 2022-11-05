@@ -1,0 +1,361 @@
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.grid{
+  width: 70%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.logo img{
+  width:130px;
+   height:90px;
+}
+.logo:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+.menu h2{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+	font-weight: bold;
+	font-family: Arial;
+  margin: 0 80px;
+  width: 80%;
+  max-width: 700px;
+  padding: 0;
+}
+.kar{
+  width: calc(16.66667% - 20px);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: #fff;
+	font-weight: bold;
+	font-family: Arial;
+  font-size: 30px;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+width:30px;
+   height:30px;
+}
+.glav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.vnut{
+
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+   margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    display: flex;
+}
+.markimashin{
+  background-color: black;
+  padding: 5px;
+
+}
+.markimashin h2{
+  font-size: 25px;
+  color: white;
+}
+.poisk{
+  display: flex;
+align-content: center;
+justify-content: flex-start;
+padding: 10px 0 0 0;
+}
+.poisk button:hover {
+  transform: scale3d(0.95, 0.95, 0.95);
+}
+.poisk  button{
+  background-color: black;
+  padding: 2.5px 0 2.5px 0;
+  width: 91%;
+  color: white;
+  font-size: 20px;
+}
+.kolon{
+  width: 20%;
+}
+.marki{
+  width: 90%;
+  border: 10px solid black;
+  font-weight: bold;
+}
+.marki li{
+  list-style: inline-block;
+    display: flex;
+}
+.marki ul{
+  padding: 3px;
+}
+.marki a{
+  color: black;
+  text-decoration: none;
+}
+.god{
+  border-top: 10px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.god p{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0 0 0;
+}
+.god img{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem 0 0 0;
+  width:30px;
+   height:30px;
+}
+.otziv{
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 10px;
+  background-color:black ;
+}
+.vse-otzivi button{
+  margin: 10px;
+width: 20%;
+height:  3rem;
+}
+.vse-otzivi button:hover {
+  background-color: #03807c;
+  transform: scale3d(0.95, 0.95, 0.95);
+  border: 0;
+}
+.mashin{
+  display: block;
+  position: relative;
+  padding: 20px;
+ 
+  width: 100%;
+  height: 100%;
+}
+li:hover{
+    text-decoration: underline;
+}
+.mashin1{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);	
+  grid-gap: 0px;
+grid-auto-rows: minmax(0px, auto);
+}
+.mashin1 img {
+  grid-row: 1;
+  grid-column: 1;
+  width: 67%;
+height: 100%;
+}
+.mashin1 p{
+  display: flex;
+  color: #fff;
+}
+.navbar{
+  padding-top: 0;
+}
+
+.vseot{
+  margin:0  0 0 28% ;
+  display: flex;
+width: 30%;
+}
+.vseot button:hover {
+  transform: scale3d(0.95, 0.95, 0.95);
+}
+.vseot  button{
+  display: flex;
+align-content: center;
+justify-content: center;
+  background-color: white;
+  padding: 2.5px 0 2.5px 0;
+  width: 100%;
+}
+.nav-link{
+padding: 0;
+}
+.ocenutext{
+  background-color: white;
+grid-row: 1;
+grid-column: 2/4;
+display: flex;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content:baseline ;
+box-sizing: border-box;
+flex-basis: 100%;
+min-width: 100%;
+}
+.text{
+  width: calc(100% - 155px);
+height: 100%;
+display: inline-flex;
+align-items: center;
+}
+.text h2{
+  font-size: 20px;
+}
+.ocen{
+  font-size: 35px;
+  width: 90px;
+height: 90px;
+display: inline-block;
+background-color: black;
+color: white;
+margin: 10px;
+min-width: 90px;
+align-items: center;
+justify-content: center;
+}
+.ocen p{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.zamena{
+  display: none;
+  width: 100%;
+  background-color: black;
+margin:  30px 0 30px 0;
+list-style: inline-block;
+align-items: center;
+justify-content: center;
+padding: 10px 0 10px 0;
+}
+@media (max-width: 1200px) {
+  .zamena{
+    display:flex ;
+  }
+  .kolon{
+    display: none;
+  }
+  .mashin{
+    width: 100%;
+  }
+  .vnut{
+    width: 100%;
+  }
+  .osnov h2{
+    font-size: 30px;
+  }
+  .osnov h2{
+    font-size: 20px;
+  }
+}
+.melmark{
+  font-weight: bold;
+  align-items: center;
+justify-content: center;
+display: flex;
+  margin: 0 20px 0 20px;
+width: 30%;
+height:  80%;
+background-color: white;
+}
+.melmark img{
+  width:30px;
+   height:30px;
+}
+.zamena p{
+  font-size: 30px;
+}
+.melgod{
+  font-weight: bold;
+  align-items: center;
+justify-content: center;
+  display: flex;
+  margin: 0 20px 0 20px;
+  background-color: white;
+  width: 30%;
+height:  80%;
+}
+.melgod img{
+  width:30px;
+   height:30px;
+}
+.melpoisk{
+  width: 30%;
+height:  80%;
+}
+.melpoisk button:hover {
+  transform: scale3d(0.95, 0.95, 0.95);
+}
+.melpoisk  button{
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 30px;
+}
+.conpodval{
+  padding: 100px 0 50px;
+  background: #252a2c;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 10px 0;
+display: block;
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+align-items: center;
+justify-content: center;}
+
+.mashin1 a{
+  text-decoration: none;
+  color: #fff;
+}
+.mashin1 a:hover{
+  text-decoration: underline;
+}

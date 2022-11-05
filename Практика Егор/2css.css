@@ -1,0 +1,216 @@
+body{
+  background-image: url(foto/fon/fon.jpg);
+  background-size: 100%; /* Современные браузеры */
+}
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+.logo{
+  width: calc(16.66667% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.menu{
+  width: calc(66.66667% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: center;
+
+}
+@font-face {
+    font-family: font; 
+    src: url(foto/font/font.ttf);
+}
+.menu h1{
+font-family: font;
+}
+.glav{
+  display: flex;
+  justify-content: center;
+}
+.reklama{
+  width: 15%;
+  height: 100%;
+  padding: 20px 0 0 30px;
+}
+.reklama img{
+width:200px;
+
+}
+
+.novost{
+  width: 55%;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+flex-direction: column;
+background-color: #f3fafd;
+}
+.novost img{
+  width: 100%;
+  display: flex;
+justify-content: center;
+}
+
+.block{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-gap: 42px;
+border: 1px solid black;
+margin-top: 5px;
+}
+.logdata{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 5px;
+
+}
+.koment img{
+  width: 35%;
+
+}
+.kom{
+  border-left: 1px solid black;
+  grid-column: 2/5;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.cuslo{
+  display: flex;
+justify-content: center;
+padding: 10px 0 5px 0;
+}
+.prav{
+  width: 20%;
+height: 100%;
+display: flex;
+justify-content: right;
+flex-direction: column;
+}
+.naviga{
+  border: 2px solid black;
+margin: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.naviga h1{
+  border-bottom: 1px solid black;
+padding: 0px;
+}
+.naviga a{
+  color: black;
+}
+.naviga a:hover{
+  text-decoration: underline;
+}
+.naviga p{
+  font-size: 30px;
+}
+.reklamaa {
+  padding: 20px;
+  display: flex;
+justify-content: center;
+}
+.reklamaa img{
+  width: 200px;
+}
+@media (max-width: 1700px){
+.osnov h1{
+
+  font-size: 35px;
+}
+}
+@media (max-width: 1500px){
+  .novost{
+    width: 45%;
+  }
+  .reklama{
+  width: 18%;
+}
+}
+@media (max-width: 1350px){
+.prav{
+  width: 25%;
+}
+.reklama{
+  width: 25%;
+}
+.osnov h1{
+  font-size: 22px;
+}
+}
+.conpodval{
+  border-top: 1px solid black;
+  padding: 100px 0 50px;
+color: black;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+
+ 
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.icons  {
+  padding-top: 20px;
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons img{
+  width: 30px;
+  height: 30px;
+}
+.icons a{
+  margin-right: 30px;
+}
+.icons a:last-child{
+  margin-right: 0;
+}
+.icons img{
+  width: 40px;
+  height: 40px;
+}

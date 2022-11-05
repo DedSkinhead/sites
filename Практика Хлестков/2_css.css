@@ -1,0 +1,200 @@
+.conteiner{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.grid{
+  width: 80%;
+  max-width: 2140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo{
+  width: calc(7% - 20px);
+  margin-right: 20px;
+  display: flex;
+align-items: center;
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.menu{
+margin-right: 20px;
+display: flex;
+justify-content: center;
+width: 70%;
+}
+.menu ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: brown,helvetica,arial,sans-serif;
+  margin: 0;
+  max-width: 90%;
+  padding: 0;
+}
+.menu li{
+list-style: none;
+font-weight: 800;
+color: #2f3132;
+text-transform: uppercase;
+padding-bottom: 0;
+white-space: nowrap;
+margin-right: 45px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.kar{
+  width: calc(10% - 20px);
+margin-right: 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.kar img{
+  margin-right:2rem;
+display: flex;
+justify-content: center;
+}
+.kar img:last-child{
+  margin-right: 0;
+}
+.one{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.bloak{
+  margin: auto;
+  margin: 50px;
+  padding: 10px;
+  width: 58%;
+position: relative;
+display: flex;
+color: white;
+border: 1px solid white;
+}
+.bloak button{
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+}
+.text{
+  padding-right: 80px;
+
+}
+.plat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.two{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.two h2{
+  font-weight: bold;
+
+}
+.tarifi{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows:repeat(1,1fr) ;
+  padding: 30px;
+  grid-gap: 10px;
+}
+.block{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media  (max-width: 1300px){
+  .grid{
+    width: 95%;
+  }
+  .kar{
+    align-items: center;
+  }
+  .grid h2{
+    font-size: 20px;
+  }
+}
+.conpodval{
+  
+  padding: 100px 0 50px;
+  background: black;
+color: #fff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+padding: 50px 0;
+display: block;
+white-space: nowrap;
+}
+.conpodval a{
+  text-decoration: none;
+  color: white  ;
+}
+.conpodval a:hover{
+  text-decoration: none;
+  color: white  ;
+  text-decoration: underline;
+}
+.osnov  {
+max-width: 2140px;
+width: calc(80% - 80px);
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+font-family: brown,helvetica,arial,sans-serif;
+overflow: hidden;
+position: relative;
+padding-bottom: 10px;
+border: none;
+}
+
+.osnov::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+}
+.osnov  ul {
+    text-align: center;
+    list-style: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.osnov li{
+  display: inline-block;
+    width: 100px;
+    text-transform: uppercase;
+padding-bottom: 0;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
